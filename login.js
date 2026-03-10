@@ -27,5 +27,12 @@ if(currentStep==="askUsername"){
   }
 }else if (currentStep==="askPassword"){
   const password1=input;
-  
+if(username==="student" && password1==="123456"){
+  print("You are logged in as a student.");
+  document.getElementByld("main-link").style.display="block";
+}else{
+  print("incorrect password.");
+  await sleep (1500);
+  print("Refresh page and try again.");
+}
   
