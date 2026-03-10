@@ -10,3 +10,22 @@ function sleep(ms) {
 }
 let currentStep="askUsername";
 let username="";
+submitBtn.addEventListener("click",async () =>{
+  const input=userInpt.value.trim();
+  userInput.value="";
+if(currentStep==="askUsername"){
+  username=input;
+  if(username==="student"||username==="teacher"){
+    print("Thank you.");
+    await sleep(1000);
+    print("Please input password:");
+    currentStep="askPassword";
+  }else {
+    print("Incorrect username. Please refresh page and try again.");
+    currentStep="end";
+  }
+  }
+}else if (currentStep==="askPassword"){
+  const password1=input;
+  
+  
