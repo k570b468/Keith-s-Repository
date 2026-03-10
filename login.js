@@ -5,13 +5,13 @@ function print(text) {
   gameText.innerText +=text + "\n";
   gameText.scrollTop =gameText.scrollHeight;
 }
-function sleep(ms) {
+function sleep(ms){
   return new Promise(resolve=> setTimeout(resolve, ms));
 }
 let currentStep="askUsername";
 let username="";
 submitBtn.addEventListener("click",async () =>{
-  const input=userInpt.value.trim();
+  const input=userInput.value.trim();
   userInput.value="";
 if(currentStep==="askUsername"){
   username=input;
