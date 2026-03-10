@@ -24,7 +24,6 @@ if(currentStep==="askUsername"){
     print("Incorrect username. Please refresh page and try again.");
     currentStep="end";
   }
-  }
 }else if (currentStep==="askPassword"){
   const password1=input;
 if(username==="student" && password1==="123456"){
