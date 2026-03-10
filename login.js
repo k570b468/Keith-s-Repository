@@ -35,4 +35,10 @@ if(username==="student" && password1==="123456"){
   await sleep (1500);
   print("Refresh page and try again.");
 }
-  
+currentStep="end";
+} else if (currentStep==="end"){
+  print("Session finished. Refresh page to try again.");
+}
+});
+print("Log-in Page \n\nWelcome! Please enter your username:");
+
